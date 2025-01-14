@@ -71,7 +71,7 @@ Graphusion 是一个基于检索增强生成（RAG）的框架，用于从自由
 ## 引用
 
 如果您在研究中使用本项目或论文，请引用以下论文：
-![Graphusion](https://arxiv.org/abs/2407.10794)
+[Graphusion](https://arxiv.org/abs/2407.10794)
 
 
 ## 联系方式

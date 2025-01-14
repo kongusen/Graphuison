@@ -1,0 +1,5 @@
+Extract triples in the format:
+
+SUBJECT (SUBJECT_TYPE), RELATION, OBJECT (OBJECT_TYPE)
+
+if they exist in current context. otherwise please provide no.

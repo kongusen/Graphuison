@@ -1,4 +1,5 @@
 import networkx as nx
+import re
 from typing import List, Tuple, Dict
 from backend.app.models.llm_chain import LLMChain
 from backend.app.utils.exceptions import LLMException
@@ -8,8 +9,8 @@ class GraphFusioner:
         self.relation_defs = relation_defs
         self.templates = templates
 
-
-    async def fuse_graph(self, triples: List[Tuple[str, str, str]], annotated_triples: List[Tuple[str, str, str]]) -> List[Tuple[str, str, str]]:
+    async def fuse_graph(self, triples: List[Tuple[str, str, str]], annotated_triples: List[Tuple[str, str, str]]) -> \
+    List[Tuple[str, str, str]]:
         graph = self.build_graph(annotated_triples)
         fused_triples = []
         llm_chain = LLMChain()
@@ -50,10 +51,10 @@ class GraphFusioner:
         return prompt
 
     def parse_result(self, result: str) -> List[Tuple[str, str, str]]:
-         triples = []
-         for line in result.split("\n"):
+        triples = []
+        for line in result.split("\n"):
             match = re.match(r'(\w+)\s*\((\w+)\)\s*,\s*(\w+)\s*\((\w+)\)\s*,\s*(\w+)', line)
             if match:
-               subject, subject_type, relation, object_type, object_ = match.groups()
-               triples.append((subject, relation, object_))
-         return triples
+                subject, subject_type, relation, object_type, object_ = match.groups()
+                triples.append((subject, relation, object_))
+        return triples

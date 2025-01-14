@@ -1,8 +1,8 @@
 import pytest
 import asyncio
-from app.models.llm_chain import LLMChain
-from app.utils.exceptions import LLMException
-from app.config import LlamaSettings
+from backend.app.models.llm_chain import LLMChain
+from backend.app.utils.exceptions import LLMException
+from backend.app.config import LlamaSettings
 from llama_index.llms.openai import OpenAI
 
 @pytest.mark.asyncio

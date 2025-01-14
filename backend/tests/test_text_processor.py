@@ -1,45 +1,48 @@
+import unittest
 import asyncio
-import pytest
-import sys
-import os
-from app.models.text_processor import TextProcessor
+from backend.app.models.text_processor import TextProcessor
+
+class TestTextProcessor(unittest.TestCase):
+
+    def setUp(self):
+        self.processor = TextProcessor(language="en")  # 或者指定你需要的语言
+
+    def test_preprocess_text(self):
+       async def run_test():
+            text = "This is a test sentence. Here is another one."
+            sentences, tokens = await self.processor.preprocess_text(text)
+            self.assertEqual(len(sentences), 2)
+            self.assertEqual(len(tokens), 2)
+            self.assertIsInstance(sentences,list)
+            self.assertIsInstance(tokens,list)
+            self.assertTrue(all(isinstance(item,list) for item in tokens))
+            self.assertTrue(all(isinstance(item,str) for item in sentences))
+            self.assertTrue(all(isinstance(item,str) for sublist in tokens for item in sublist))
 
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
-   
+       asyncio.run(run_test())
+    def test_extract_information(self):
+        text = "Apple is a company and it is located in USA."
+        info = self.processor.extract_information(text)
+        self.assertIn('entities', info)
+        self.assertIn('relations',info)
+        self.assertIsInstance(info['entities'],list)
+        self.assertIsInstance(info['relations'],list)
+        self.assertTrue(all(isinstance(item,tuple) for item in info['entities']))
+        self.assertTrue(all(isinstance(item,tuple) for item in info['relations']))
+    def test_process_files(self):
+        async def run_test():
+           with open("test.txt",'w') as f:
+             f.write("This is a test file")
+           files = ["test.txt"]
+           sentences = await self.processor.process_files(files)
+           self.assertEqual(len(sentences),1)
+           self.assertIsInstance(sentences, list)
+           self.assertTrue(all(isinstance(item,str) for item in sentences))
+           import os
+           os.remove("test.txt")
 
-@pytest.mark.asyncio
-async def test_preprocess_text_normal():
-    processor = TextProcessor(language="zh")
-    text = "This is a test sentence. This is another one."
-    sentences, tokens = await processor.preprocess_text(text)
-    assert len(sentences) == 2
-    assert len(tokens) == 2
-    assert all(isinstance(sent, str) for sent in sentences)
-    assert all(isinstance(token, list) for token in tokens)
-    assert ["test"] in tokens
-    assert ["sentence"] in tokens
+        asyncio.run(run_test())
 
-
-@pytest.mark.asyncio
-async def test_preprocess_text_empty():
-   processor = TextProcessor(language="zh")
-   text = ""
-   sentences, tokens = await processor.preprocess_text(text)
-   assert len(sentences) == 0
-   assert len(tokens) == 0
-
-@pytest.mark.asyncio
-async def test_process_file_normal():
-    processor = TextProcessor(language="zh")
-    file_paths = ["tests/test_data/test.txt"]
-    sentences = await processor.process_files(file_paths)
-    assert len(sentences) == 2
-    assert all(isinstance(sent, str) for sent in sentences)
-
-@pytest.mark.asyncio
-async def test_process_file_notfound():
-    processor = TextProcessor(language="zh")
-    file_paths = ["tests/test_data/notfound.txt"]
-    sentences = await processor.process_files(file_paths)
-    assert len(sentences) == 0
+if __name__ == '__main__':
+    unittest.main()

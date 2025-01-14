@@ -9,7 +9,7 @@ import asyncio
 class TextProcessor:
     def __init__(self, language=None, processors="tokenize,lemma,pos,ner,depparse"):
         self.language = language if language else settings.DEFAULT_LANGUAGE
-        self.nlp = Pipeline(self.language, processors=processors, use_gpu=False, verbose=False)
+        self.nlp = Pipeline(self.language, processors=processors, use_gpu=False, verbose=False, use_async=True)
 
     async def preprocess_text(self, text: str) -> Tuple[List[str], List[List[str]]]:
         sentences = []
@@ -47,10 +47,10 @@ class TextProcessor:
         results = []
         for file_path in file_paths:
             try:
-                with open(file_path, 'r', encoding='utf-8') as f:
-                    text = f.read()
-                sentences, _ = await self.preprocess_text(text)
-                results.extend(sentences)
+               with open(file_path, 'r', encoding='utf-8') as f:
+                   text = f.read()
+               sentences, _ = await self.preprocess_text(text)
+               results.extend(sentences)
             except FileNotFoundError:
-                pass
+               pass
         return results

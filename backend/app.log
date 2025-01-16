@@ -1,0 +1,176 @@
+2025-01-16 11:54:47,374 | ERROR | Error occurred: 'TopicModeler' object has no attribute 'language'
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/routers/concept_extraction.py", line 23, in extract_concepts
+    concepts = await model.get_concepts(request.sentences)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 68, in get_concepts
+    if self.language == "zh":
+AttributeError: 'TopicModeler' object has no attribute 'language'
+
+2025-01-16 13:43:00,379 | INFO | Use pytorch device_name: mps
+2025-01-16 13:43:00,380 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 13:43:31,070 | ERROR | Error occurred: k must be less than or equal to the number of training points
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/routers/concept_extraction.py", line 23, in extract_concepts
+    concepts = await model.get_concepts(request.sentences)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 88, in get_concepts
+    topics, _ = topic_model.fit_transform(sentences_list)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 463, in fit_transform
+    documents, probabilities = self._cluster_embeddings(umap_embeddings, documents, y=y)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 3778, in _cluster_embeddings
+    self.hdbscan_model.fit(umap_embeddings, y=y)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/hdbscan/hdbscan_.py", line 1270, in fit
+    self.generate_prediction_data()
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/hdbscan/hdbscan_.py", line 1311, in generate_prediction_data
+    self._prediction_data = PredictionData(
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/hdbscan/prediction.py", line 103, in __init__
+    self.core_distances = self.tree.query(data, k=min_samples)[0][:, -1]
+  File "sklearn/neighbors/_binary_tree.pxi", line 1180, in sklearn.neighbors._kd_tree.BinaryTree64.query
+ValueError: k must be less than or equal to the number of training points
+
+2025-01-16 13:51:22,742 | INFO | Use pytorch device_name: mps
+2025-01-16 13:51:22,742 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 13:52:48,477 | ERROR | Error occurred: k must be less than or equal to the number of training points
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/routers/concept_extraction.py", line 23, in extract_concepts
+    concepts = await model.get_concepts(request.sentences)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 88, in get_concepts
+    topics, _ = topic_model.fit_transform(sentences_list)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 463, in fit_transform
+    documents, probabilities = self._cluster_embeddings(umap_embeddings, documents, y=y)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 3778, in _cluster_embeddings
+    self.hdbscan_model.fit(umap_embeddings, y=y)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/hdbscan/hdbscan_.py", line 1270, in fit
+    self.generate_prediction_data()
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/hdbscan/hdbscan_.py", line 1311, in generate_prediction_data
+    self._prediction_data = PredictionData(
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/hdbscan/prediction.py", line 103, in __init__
+    self.core_distances = self.tree.query(data, k=min_samples)[0][:, -1]
+  File "sklearn/neighbors/_binary_tree.pxi", line 1180, in sklearn.neighbors._kd_tree.BinaryTree64.query
+ValueError: k must be less than or equal to the number of training points
+
+2025-01-16 13:58:08,209 | INFO | Use pytorch device_name: mps
+2025-01-16 13:58:08,212 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:08:11,129 | INFO | Use pytorch device_name: mps
+2025-01-16 14:08:11,130 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:16:59,466 | INFO | Use pytorch device_name: mps
+2025-01-16 14:16:59,467 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:23:28,227 | INFO | Use pytorch device_name: mps
+2025-01-16 14:23:28,228 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:26:18,378 | INFO | Use pytorch device_name: mps
+2025-01-16 14:26:18,378 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:29:17,579 | INFO | Use pytorch device_name: mps
+2025-01-16 14:29:17,579 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:29:38,423 | ERROR | Error occurred: 'Token' object has no attribute 'upos'
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 110, in get_concepts
+    if token.upos == "NOUN":
+AttributeError: 'Token' object has no attribute 'upos'
+
+2025-01-16 14:29:38,472 | ERROR | Error occurred: 'Token' object has no attribute 'upos'
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 110, in get_concepts
+    if token.upos == "NOUN":
+AttributeError: 'Token' object has no attribute 'upos'
+
+2025-01-16 14:29:38,504 | ERROR | Error occurred: 'Token' object has no attribute 'upos'
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 110, in get_concepts
+    if token.upos == "NOUN":
+AttributeError: 'Token' object has no attribute 'upos'
+
+2025-01-16 14:29:38,535 | ERROR | Error occurred: 'Token' object has no attribute 'upos'
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 110, in get_concepts
+    if token.upos == "NOUN":
+AttributeError: 'Token' object has no attribute 'upos'
+
+2025-01-16 14:29:38,576 | ERROR | Error occurred: 'Token' object has no attribute 'upos'
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 110, in get_concepts
+    if token.upos == "NOUN":
+AttributeError: 'Token' object has no attribute 'upos'
+
+2025-01-16 14:29:38,612 | ERROR | Error occurred: 'Token' object has no attribute 'upos'
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 110, in get_concepts
+    if token.upos == "NOUN":
+AttributeError: 'Token' object has no attribute 'upos'
+
+2025-01-16 14:31:31,009 | INFO | Use pytorch device_name: mps
+2025-01-16 14:31:31,010 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:39:00,184 | INFO | Use pytorch device_name: mps
+2025-01-16 14:39:00,184 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:42:13,426 | INFO | Use pytorch device_name: mps
+2025-01-16 14:42:13,428 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:45:12,408 | INFO | Use pytorch device_name: mps
+2025-01-16 14:45:12,409 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:47:34,793 | INFO | Use pytorch device_name: mps
+2025-01-16 14:47:34,794 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:50:59,114 | INFO | Use pytorch device_name: mps
+2025-01-16 14:50:59,115 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:51:03,323 | ERROR | Error occurred: object of type 'numpy.float64' has no len()
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/routers/concept_extraction.py", line 23, in extract_concepts
+    concepts = await model.get_concepts(request.sentences)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 99, in get_concepts
+    topics, _ = topic_model.fit_transform(sentences_list)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 493, in fit_transform
+    self._extract_topics(documents, embeddings=embeddings, verbose=self.verbose)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 3990, in _extract_topics
+    self.c_tf_idf_, words = self._c_tf_idf(documents_per_topic)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 4228, in _c_tf_idf
+    self.ctfidf_model = self.ctfidf_model.fit(X, multiplier=multiplier)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/vectorizers/_ctfidf.py", line 88, in fit
+    self._idf_diag = sp.diags(
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/scipy/sparse/_construct.py", line 279, in diags
+    A = diags_array(diagonals, offsets=offsets, shape=shape, dtype=dtype)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/scipy/sparse/_construct.py", line 149, in diags_array
+    if len(diagonals) == 0 or isscalarlike(diagonals[0]):
+TypeError: object of type 'numpy.float64' has no len()
+
+2025-01-16 14:53:03,498 | INFO | Use pytorch device_name: mps
+2025-01-16 14:53:03,500 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:53:07,157 | ERROR | Error occurred: object of type 'numpy.float64' has no len()
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/routers/concept_extraction.py", line 23, in extract_concepts
+    concepts = await model.get_concepts(request.sentences)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 99, in get_concepts
+    topics, _ = topic_model.fit_transform(sentences_list)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 493, in fit_transform
+    self._extract_topics(documents, embeddings=embeddings, verbose=self.verbose)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 3990, in _extract_topics
+    self.c_tf_idf_, words = self._c_tf_idf(documents_per_topic)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 4228, in _c_tf_idf
+    self.ctfidf_model = self.ctfidf_model.fit(X, multiplier=multiplier)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/vectorizers/_ctfidf.py", line 88, in fit
+    self._idf_diag = sp.diags(
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/scipy/sparse/_construct.py", line 279, in diags
+    A = diags_array(diagonals, offsets=offsets, shape=shape, dtype=dtype)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/scipy/sparse/_construct.py", line 149, in diags_array
+    if len(diagonals) == 0 or isscalarlike(diagonals[0]):
+TypeError: object of type 'numpy.float64' has no len()
+
+2025-01-16 14:55:50,648 | INFO | Use pytorch device_name: mps
+2025-01-16 14:55:50,649 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-01-16 14:55:54,346 | ERROR | Error occurred: object of type 'numpy.float64' has no len()
+Traceback (most recent call last):
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/routers/concept_extraction.py", line 23, in extract_concepts
+    concepts = await model.get_concepts(request.sentences)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/backend/app/models/topic_modeler.py", line 99, in get_concepts
+    topics, _ = topic_model.fit_transform(sentences_list)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 493, in fit_transform
+    self._extract_topics(documents, embeddings=embeddings, verbose=self.verbose)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 3990, in _extract_topics
+    self.c_tf_idf_, words = self._c_tf_idf(documents_per_topic)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/_bertopic.py", line 4228, in _c_tf_idf
+    self.ctfidf_model = self.ctfidf_model.fit(X, multiplier=multiplier)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/bertopic/vectorizers/_ctfidf.py", line 88, in fit
+    self._idf_diag = sp.diags(
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/scipy/sparse/_construct.py", line 279, in diags
+    A = diags_array(diagonals, offsets=offsets, shape=shape, dtype=dtype)
+  File "/Users/lizhongxiang/PycharmProjects/pythonProject/Graphuison/venv/lib/python3.10/site-packages/scipy/sparse/_construct.py", line 149, in diags_array
+    if len(diagonals) == 0 or isscalarlike(diagonals[0]):
+TypeError: object of type 'numpy.float64' has no len()
+
+2025-01-16 14:59:55,116 | INFO | Use pytorch device_name: mps
+2025-01-16 14:59:55,117 | INFO | Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2

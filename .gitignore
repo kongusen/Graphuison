@@ -33,3 +33,4 @@ build/
 /sift1M/
 /date_export/
 /train/fasttext/model/
+/.idea/

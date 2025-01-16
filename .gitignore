@@ -34,3 +34,4 @@ build/
 /date_export/
 /train/fasttext/model/
 /.idea/
+/.idea/*

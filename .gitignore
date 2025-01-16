@@ -2,6 +2,7 @@
 /frontend/.next/
 venv/
 .idea/
+.idea
 
 *.pyc
 __pycache__/

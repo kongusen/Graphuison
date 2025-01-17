@@ -1,0 +1,746 @@
+2025-01-17 10:19:46,465 | INFO | Load pretrained SentenceTransformer: shibing624/text2vec-base-chinese
+2025-01-17 10:20:05,403 | WARNING | Error while downloading from https://cdn-lfs.hf.co/shibing624/text2vec-base-chinese/0c855515479137398ce4ea985628548d4e8ed8c5764656dac966d6a24f39e721?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1737339252&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczNzMzOTI1Mn19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zaGliaW5nNjI0L3RleHQydmVjLWJhc2UtY2hpbmVzZS8wYzg1NTUxNTQ3OTEzNzM5OGNlNGVhOTg1NjI4NTQ4ZDRlOGVkOGM1NzY0NjU2ZGFjOTY2ZDZhMjRmMzllNzIxP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=QWlxq8fbHtl6kU3Id-onhLHyZ%7E8Ie4%7Eb3TpQ5XJJrL3P0SYvPf1SxYARjBJkdMyGkwbFluE2fm8z1WQ8HD8YwjWL03yLmJ6wA1sNX-2VtPAMp4tGgly31Ydyu3ixttvErUCRv2OLE6TU7u1ZpnA0kDCJT-QiDXkBkHEakdoDa8fX2zKOv8aCICkzXfaCc7unzjKBS3xQIy9Jj1Wljsb2A4M9OrU2o89H3xOPNzHMoV9Af09eC4xQ%7EJEAWHtvoxWeVTKZiEKe6tWdVlt0oGrzq-RpAy-%7ErAdwhQm-C%7ELRrrR9FxKTSVr4P9sIE2qQSpYOcbUW5oDUWHwDPbyRvhVo6w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-01-17 10:20:16,428 | ERROR | Error during BERTopic/LDA processing: (ReadTimeoutError("HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 6af2e8f2-3cc6-4fab-9e19-7558326cf918)')
+2025-01-17 10:29:23,670 | INFO | Load pretrained SentenceTransformer: shibing624/text2vec-base-chinese
+2025-01-17 10:29:39,096 | WARNING | Error while downloading from https://cdn-lfs.hf.co/shibing624/text2vec-base-chinese/0c855515479137398ce4ea985628548d4e8ed8c5764656dac966d6a24f39e721?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1737339359&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczNzMzOTM1OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9zaGliaW5nNjI0L3RleHQydmVjLWJhc2UtY2hpbmVzZS8wYzg1NTUxNTQ3OTEzNzM5OGNlNGVhOTg1NjI4NTQ4ZDRlOGVkOGM1NzY0NjU2ZGFjOTY2ZDZhMjRmMzllNzIxP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=bqgaKRzwAlZEIVxSVPl3gFWVIIBIbIMKmxizXy1p236vOcBydWJqx1XaOrokBr4A7NlK0o%7E1M86qeLRL7KbrNA24zo8isKN1oFPpCZg0AiwrEpjzJbyKK6kI1U3kwM51BnR-HwdAUemRt6-V%7EwVA2v0YzdbnHV5cAKQAsLHdMCA7s8dC%7EXo7Bza%7EmI6QoecapH%7EHMtvSG9e4Ee8C9zSzeIr3C%7EEw8VFHo3GugEKcUmgXQnpoNfmwekLW8qXB0lXSdnEy0yvuQCW6MzKlNdOXeimuH5eIatgYcjTk0Q4I3eP6mbGSSJTW-arg-5678T4BahdJjlO%7ECFl6sXZq4365Hg__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-01-17 10:29:50,136 | ERROR | Error during BERTopic/LDA processing: (ReadTimeoutError("HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 1788af44-b9ee-4f25-a693-a9ebccb736dc)')
+2025-01-17 10:46:35,510 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 10:46:49,300 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 10:46:49,301 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 10:46:49,590 | DEBUG | Loading model cost 0.289 seconds.
+2025-01-17 10:46:49,590 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 10:46:49,788 | INFO | BERTopic topics: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+2025-01-17 10:46:49,800 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [72：玉边璋：这是三星堆遗址目前发现的形体最大的玉璋，堪称“边璋之王”，它通长162、宽2...
+
+[1 rows x 5 columns]
+2025-01-17 10:46:49,869 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:49,893 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:49,928 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,010 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,049 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,069 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,088 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,109 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,129 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,150 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 10:46:50,222 | INFO | Loading all indices.
+2025-01-17 10:47:23,922 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 10:47:28,728 | ERROR | Error during BERTopic/LDA processing: k must be less than or equal to the number of training points
+2025-01-17 10:58:15,944 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 11:00:39,700 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 11:00:39,717 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 11:00:39,889 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:39,912 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:39,936 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:39,953 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:39,971 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:39,987 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,012 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,028 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,044 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,060 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,081 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,096 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,118 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,147 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,166 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,191 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,209 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,231 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,250 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,266 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,282 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,306 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,324 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,351 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,381 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,401 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,427 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,442 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,475 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,509 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,536 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,562 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,586 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,607 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,626 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,645 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,666 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,680 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,703 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,722 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,737 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,753 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,769 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,795 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,814 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,841 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,863 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,880 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,894 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:00:40,911 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:31,736 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 11:09:48,880 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 11:09:48,880 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 11:09:49,246 | DEBUG | Loading model cost 0.365 seconds.
+2025-01-17 11:09:49,246 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 11:09:51,397 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 11:09:51,423 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 11:09:51,553 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,569 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,590 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,605 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,619 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,634 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,652 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,669 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,686 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,702 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,720 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,735 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,748 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,765 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,780 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,799 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,814 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,833 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,854 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,870 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,884 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,905 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,919 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,940 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,962 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:51,977 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,002 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,021 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,046 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,068 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,084 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,099 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,122 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,138 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,159 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,178 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,209 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,227 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,253 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,280 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,301 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,316 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,330 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,350 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,365 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,384 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,402 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,420 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,440 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:09:52,462 | ERROR | Error during stanza processing: 'Token' object has no attribute 'upos'
+2025-01-17 11:16:22,091 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 11:16:37,344 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 11:16:37,345 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 11:16:37,734 | DEBUG | Loading model cost 0.389 seconds.
+2025-01-17 11:16:37,734 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 11:16:39,637 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 11:16:39,651 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 11:16:39,782 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,803 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,829 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,846 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,862 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,876 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,897 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,911 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,928 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,942 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,959 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,973 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:39,987 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,010 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,029 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,051 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,068 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,089 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,110 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,124 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,139 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,159 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,173 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,192 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,213 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,230 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,255 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,273 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,298 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,321 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,336 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,350 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,369 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,382 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,403 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,421 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,452 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,474 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,506 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,530 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,546 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,562 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,577 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,596 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,614 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,634 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,656 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,678 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,694 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:16:40,714 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:08,387 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 11:21:20,659 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 11:21:20,730 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 11:21:20,833 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,849 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,877 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,891 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,905 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,920 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,941 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,955 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,973 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:20,989 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,009 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,024 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,038 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,056 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,070 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,088 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,102 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,120 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,139 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,154 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,168 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,190 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,204 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,227 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,248 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,262 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,281 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,295 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,316 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,335 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,349 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,363 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,381 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,395 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,414 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,434 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,455 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,469 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,494 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,513 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,529 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,543 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,557 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,577 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,594 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,613 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,631 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,649 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,663 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:21:21,680 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:05,086 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 11:28:21,136 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 11:28:21,137 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 11:28:21,447 | DEBUG | Loading model cost 0.310 seconds.
+2025-01-17 11:28:21,447 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 11:28:23,285 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 11:28:23,301 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 11:28:23,378 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,397 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,479 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,496 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,512 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,527 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,546 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,560 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,578 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,592 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,609 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,623 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,638 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,657 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,670 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,687 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,703 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,723 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,745 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,761 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,777 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,799 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,814 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,835 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,856 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,869 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,887 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,902 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,925 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,948 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,967 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:23,996 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,038 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,068 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,100 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,137 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,173 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,194 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,223 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,248 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,263 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,280 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,299 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,324 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,344 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,384 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,418 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,440 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,455 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:28:24,479 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:51:08,297 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 11:51:25,115 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 11:51:25,116 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 11:51:25,411 | DEBUG | Loading model cost 0.295 seconds.
+2025-01-17 11:51:25,412 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 11:51:27,230 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 11:51:27,246 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 11:51:27,337 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,360 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,424 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,440 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,456 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,470 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,489 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,503 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,520 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,534 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,551 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,564 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,580 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,599 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,615 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,633 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,648 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,667 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,686 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,700 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,714 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,734 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,748 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,769 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,790 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,805 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,827 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,843 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,867 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,890 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,904 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,918 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,937 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,951 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,969 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:27,988 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,010 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,026 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,050 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,072 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,088 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,103 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,118 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,138 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,155 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,174 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,194 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,211 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,227 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:51:28,247 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 11:54:17,381 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 11:54:32,733 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 11:54:32,734 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 11:54:33,030 | DEBUG | Loading model cost 0.297 seconds.
+2025-01-17 11:54:33,031 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 11:54:34,911 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 11:54:34,926 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 11:54:35,055 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,077 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,100 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,114 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,128 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,142 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,160 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,175 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,190 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,204 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,220 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,234 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,248 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,265 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,280 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,299 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,314 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,330 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,348 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,362 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,375 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,396 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,411 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,431 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,451 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,465 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,486 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,500 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,524 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,546 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,560 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,574 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,592 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,606 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,624 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,643 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,661 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,675 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,697 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,717 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,733 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,748 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,763 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,784 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,800 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,820 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,838 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,856 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,870 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 11:54:35,889 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:02:17,847 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 12:02:29,182 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 12:02:29,197 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 12:03:37,648 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:03:50,838 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:45,961 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:46,665 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:47,219 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:47,663 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:48,033 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:48,279 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:52,026 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:52,220 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:52,443 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:52,646 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:52,856 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:53,061 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:53,323 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:04:53,575 | ERROR | Error during stanza processing: 'Token' object has no attribute 'pos'
+2025-01-17 12:05:54,131 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 12:06:17,467 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 12:06:17,468 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 12:06:17,782 | DEBUG | Loading model cost 0.315 seconds.
+2025-01-17 12:06:17,783 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 12:07:35,836 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 12:07:53,100 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 12:07:53,101 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 12:07:53,410 | DEBUG | Loading model cost 0.308 seconds.
+2025-01-17 12:07:53,410 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 12:07:55,783 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 12:07:55,806 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 12:07:55,919 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:55,938 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:55,961 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:55,979 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:55,997 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,014 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,035 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,049 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,065 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,078 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,094 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,108 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,122 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,145 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,164 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,183 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,200 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,220 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,241 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,258 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,274 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,294 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,308 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,329 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,349 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,365 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,386 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,403 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,429 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,452 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,466 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,480 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,499 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,513 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,531 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,548 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,568 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,583 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,610 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,632 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,648 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,663 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,678 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,699 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,715 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,734 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,752 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,769 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,785 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 12:07:56,805 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:07,447 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 13:02:19,093 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 13:02:19,107 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 13:02:19,241 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,277 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,294 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,307 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,321 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,335 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,354 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,368 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,385 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,399 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,415 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,428 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,442 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,458 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,472 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,489 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,503 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,518 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,535 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,550 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,563 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,583 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,596 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,615 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,634 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,647 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,666 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,680 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,702 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,720 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,733 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,746 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,763 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,777 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,796 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,813 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,831 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,845 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,865 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,883 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,897 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,910 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,924 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,943 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,959 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,979 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:19,997 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:20,014 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:20,027 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:02:20,045 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:16:53,917 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 13:17:06,472 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 13:17:06,487 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 13:17:06,610 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,625 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,642 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,656 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,670 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,685 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,709 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,726 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,744 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,757 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,775 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,789 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,802 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,818 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,832 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,848 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,861 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,877 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,894 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,907 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,921 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,942 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,955 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,974 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:06,995 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,009 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,027 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,044 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,066 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,087 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,104 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,120 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,139 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,153 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,172 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,190 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,208 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,222 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,243 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,263 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,276 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,289 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,303 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,325 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,344 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,363 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,381 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,397 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,411 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:17:07,427 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:17,615 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 13:26:29,863 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 3, 1, 3, -1, 1, 0, 3, -1, 3, 0, 0, 0, 3, 3, 3, 1, 1, 0, 0, 1, -1, -1, 1, 1, 1, 1, 0, 1, 1, -1, 1, 3, 3, 3, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, -1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 1, -1, -1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, -1, 0, 0, 0, -1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, -1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, -1, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, -1, -1, 1, 1, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, -1, -1, -1, -1, -1, -1, 1, -1, 0, 0, -1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 2, 2, 2, 0, -1, 2, 2, 2, 2, 2, 2, -1, -1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 0, -1, 1, 1, -1, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+2025-01-17 13:26:29,880 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, （补充信息3D...
+1      0  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+2      1  ...  [由八号、三号、二号祭祀坑出土青铜神兽、青铜骑兽顶尊人像、青铜尊口沿拼合而成。, 90:青铜...
+3      2  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+4      3  ...  [这件玉边璋具有浓厚的古蜀文化色彩，体现出三星堆古蜀国发达的玉器工艺制造技术，为我们研究古蜀...
+
+[5 rows x 5 columns]
+2025-01-17 13:26:30,004 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,026 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,048 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,066 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,083 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,100 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,122 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,138 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,160 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,176 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,193 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,208 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,223 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,241 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,259 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,278 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,293 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,311 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,331 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,345 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,359 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,379 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,394 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,415 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,438 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,454 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,475 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,491 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,520 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,546 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,562 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,577 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,596 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,610 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,630 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,650 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,670 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,686 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,711 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,731 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,745 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,759 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,773 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,793 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,810 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,833 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,856 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,881 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,899 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:26:30,921 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'

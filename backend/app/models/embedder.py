@@ -4,7 +4,7 @@ import numpy as np
 import torch
 
 class SentenceEmbedder:
-    def __init__(self, model_name='all-MiniLM-L6-v2', device="cpu"):
+    def __init__(self, model_name='moka-ai/m3e-base', device="cpu"):
         self.device = device
         self._model = None
         self.model_name = model_name

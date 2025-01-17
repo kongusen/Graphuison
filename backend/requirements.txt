@@ -12,3 +12,4 @@ transformers
 requests
 pydantic-settings
 httpx[socks]
+jieba

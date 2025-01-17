@@ -744,3 +744,93 @@ Trying to resume download...
 2025-01-17 13:26:30,881 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
 2025-01-17 13:26:30,899 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
 2025-01-17 13:26:30,921 | ERROR | Error during stanza processing: 'Token' object has no attribute 'xpos'
+2025-01-17 13:59:57,205 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 14:00:13,376 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 14:00:13,376 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 14:00:13,661 | DEBUG | Loading model cost 0.285 seconds.
+2025-01-17 14:00:13,661 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 14:00:15,860 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, -1, -1, 3, 3, 3, -1, 0, 2, 2, 3, 0, 3, 2, 2, 2, 3, 3, 3, 3, 3, 0, 1, 1, 0, -1, -1, -1, -1, 0, 3, -1, -1, -1, 0, 0, -1, -1, 3, -1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, -1, -1, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, 0, 2, 1, 0, 1, 1, -1, 0, -1, -1, -1, 0, 0, -1, 1, 1, 2, 2, -1, 0, 0, 2, 2, 2, 2, 0, 2, -1, 2, 2, 2, 2, 0, -1, 2, 2, 2, -1, 0, -1, 1, 1, 1, 1, 0, 1, 1, 1, -1, 1, 0, 0, -1, 1, -1, 0, 1, -1, 1, 0, 0, 1, 1, 1, 1, -1, 0, 2, 1, 1, -1, -1, 0, 2, 2, -1, -1, 0, 0, 0, -1, -1, 1, 1, 1, 2, 2, -1, 0, -1, 1, 1, -1, -1, 0, 0, 0, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 0, 0, -1, 1, 1, 0, 0, 1, 1, 1, 1, 0, -1, -1, -1, -1, -1, -1, 0, -1, 1, -1, -1, -1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, 0, 0, 4, 4, 4, 4, -1, 4, 4, 4, 4, 4, 4, 0, 0, -1, 0, 4, 0, 0, 0, 4, 4, 4, -1, 0, 1, 0, -1, 0, -1, 4, 4, 4, 3, 4, -1, 4, 4, 4, 4, 0, 0, 0, 0, 0]
+2025-01-17 14:00:15,884 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, 我们现在看到的...
+1      0  ...  [2厘米，宽8.8厘米，1986年出土于三星堆遗址二号祭祀坑。, 98:青铜兽面：三星堆二号...
+2      1  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+3      2  ...  [立人像头顶是山形座，山顶部是镂空的方斗形建筑，建筑中间有5尊跪坐人像，大小相同、相貌相同，...
+4      3  ...  [第三部分 天地人神，71：牙璋一组展柜：在三星堆遗址出土的玉石礼器中，数量最多的是玉璋。,...
+5      4  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+
+[6 rows x 5 columns]
+2025-01-17 14:00:15,914 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,917 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,926 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,934 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,943 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,950 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,959 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,968 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:15,977 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,000 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,008 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,019 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,030 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,039 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,043 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,046 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,049 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,052 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,056 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,060 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,064 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,067 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,071 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,074 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,078 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,081 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,084 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,087 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,090 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,093 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,095 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,098 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,101 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,104 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,106 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,109 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,112 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,115 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,117 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,120 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,123 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,125 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,128 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,131 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,133 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,136 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,138 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,141 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,144 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,147 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,151 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,154 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,159 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,162 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,164 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,167 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,170 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,173 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,177 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:00:16,180 | ERROR | Error during stanza processing: object spacy.tokens.doc.Doc can't be used in 'await' expression
+2025-01-17 14:04:47,697 | INFO | Load pretrained SentenceTransformer: moka-ai/m3e-base
+2025-01-17 14:05:03,837 | DEBUG | Building prefix dict from the default dictionary ...
+2025-01-17 14:05:03,838 | DEBUG | Loading model from cache /var/folders/qx/rp30513j5nn3zn_spmyb0ls00000gn/T/jieba.cache
+2025-01-17 14:05:04,198 | DEBUG | Loading model cost 0.360 seconds.
+2025-01-17 14:05:04,198 | DEBUG | Prefix dict has been built successfully.
+2025-01-17 14:05:07,057 | INFO | BERTopic topics: [3, 3, 3, 3, 3, 3, 3, 3, 3, -1, -1, 3, 3, 3, -1, 0, 2, 2, 3, 0, 3, 2, 2, 2, 3, 3, 3, 3, 3, 0, 1, 1, 0, -1, -1, -1, -1, 0, 3, -1, -1, -1, 0, 0, -1, -1, 3, -1, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, -1, -1, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, 0, 2, 1, 0, 1, 1, -1, 0, -1, -1, -1, 0, 0, -1, 1, 1, 2, 2, -1, 0, 0, 2, 2, 2, 2, 0, 2, -1, 2, 2, 2, 2, 0, -1, 2, 2, 2, -1, 0, -1, 1, 1, 1, 1, 0, 1, 1, 1, -1, 1, 0, 0, -1, 1, -1, 0, 1, -1, 1, 0, 0, 1, 1, 1, 1, -1, 0, 2, 1, 1, -1, -1, 0, 2, 2, -1, -1, 0, 0, 0, -1, -1, 1, 1, 1, 2, 2, -1, 0, -1, 1, 1, -1, -1, 0, 0, 0, -1, -1, 1, -1, 1, -1, -1, 1, -1, -1, -1, 0, 0, -1, 1, 1, 0, 0, 1, 1, 1, 1, 0, -1, -1, -1, -1, -1, -1, 0, -1, 1, -1, -1, -1, 1, -1, -1, -1, 1, 1, -1, -1, -1, 1, 1, 0, 0, 4, 4, 4, 4, -1, 4, 4, 4, 4, 4, 4, 0, 0, -1, 0, 4, 0, 0, 0, 4, 4, 4, -1, 0, 1, 0, -1, 0, -1, 4, 4, 4, 3, 4, -1, 4, 4, 4, 4, 0, 0, 0, 0, 0]
+2025-01-17 14:05:07,076 | INFO | BERTopic topic_info:    Topic  ...                                Representative_Docs
+0     -1  ...  [（补充信息3D打印模型）这是3D打印的研究性复原造型，通高约159厘米。, 我们现在看到的...
+1      0  ...  [2厘米，宽8.8厘米，1986年出土于三星堆遗址二号祭祀坑。, 98:青铜兽面：三星堆二号...
+2      1  ...  [在这其中有带勾云纹装饰的眼睛和菱形眼形器，这些眼型器上同样有用于固定的小孔，说明它们跟面具...
+3      2  ...  [立人像头顶是山形座，山顶部是镂空的方斗形建筑，建筑中间有5尊跪坐人像，大小相同、相貌相同，...
+4      3  ...  [第三部分 天地人神，71：牙璋一组展柜：在三星堆遗址出土的玉石礼器中，数量最多的是玉璋。,...
+5      4  ...  [在古代的“十日神话”中，太阳的运行是由自由飞翔在天空中的鸟背负而行的，十个太阳每天早晨由神...
+
+[6 rows x 5 columns]

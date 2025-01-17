@@ -2,7 +2,7 @@ from gensim import corpora, models
 from backend.app.models.embedder import SentenceEmbedder
 from typing import List, Dict, Optional
 from backend.app.models.text_processor import TextProcessor
-import stanza
+import spacy
 from bertopic import BERTopic
 import asyncio
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
@@ -12,9 +12,12 @@ from bertopic.representation import MaximalMarginalRelevance
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import wordnet
 import logging
+import pandas as pd
 import jieba
+import numpy as np
 from sentence_transformers import SentenceTransformer
 import umap
+from backend.app.config import settings
 
 
 class TopicModeler:
@@ -22,9 +25,13 @@ class TopicModeler:
         self.num_topics = num_topics
         self.embedder = embed_model if embed_model else SentenceEmbedder()
         self.text_processor = TextProcessor(language=language)
-        self.nlp = stanza.Pipeline(language if language else 'en', processors="tokenize,pos", verbose=False)
+        self.language = language if language else settings.DEFAULT_LANGUAGE
+        if self.language == "zh":
+            self.nlp = spacy.load("zh_core_web_sm")
+        else:
+            self.nlp = spacy.load("en_core_web_sm")
         self.lemmatizer = WordNetLemmatizer()
-        self.language = language if language else 'en'
+
         self.jieba_cut = lambda x: " ".join(jieba.cut(x))
         self.bertopic_config = bertopic_config if bertopic_config else {}
         self.logger = logging.getLogger(__name__)
@@ -97,11 +104,11 @@ class TopicModeler:
             for topic in lda_model.show_topics(formatted=False):
                 for word, _ in topic[1]:
                     try:
-                        doc = await asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
-                        for sent in doc.sentences:
-                            for token in sent.tokens:
-                                if token.xpos.startswith("NN"):
-                                    concepts.append(token.text)
+                        doc = asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
+                        doc = await doc
+                        for token in doc:
+                            if token.pos_ == "NOUN":
+                                concepts.append(token.text)
                     except Exception as e:
                         self.logger.error(f"Error during stanza processing: {e}")
                         continue
@@ -117,11 +124,11 @@ class TopicModeler:
                     topic_words = topic_model.get_topic(topic)
                     for word, _ in topic_words:
                         try:
-                            doc = await asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
-                            for sent in doc.sentences:
-                                for token in sent.tokens:
-                                    if token.xpos.startswith("NN"):
-                                        concepts.append(token.text)
+                            doc = asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
+                            doc = await doc
+                            for token in doc:
+                                if token.pos_ == "NOUN":
+                                    concepts.append(token.text)
                         except Exception as e:
                             self.logger.error(f"Error during stanza processing: {e}")
                             continue
@@ -141,11 +148,11 @@ class TopicModeler:
                 topic_words = topic_model.get_topic(topic)
                 for word, _ in topic_words:
                     try:
-                        doc = await asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
-                        for sent in doc.sentences:
-                            for token in sent.tokens:
-                                if token.xpos.startswith("NN"):
-                                    concepts.append(token.text)
+                        doc = asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
+                        doc = await doc
+                        for token in doc:
+                            if token.pos_ == "NOUN":
+                                concepts.append(token.text)
                     except Exception as e:
                         self.logger.error(f"Error during stanza processing: {e}")
                         continue
@@ -166,11 +173,11 @@ class TopicModeler:
                 topic_words = topic_model.get_topic(topic)
                 for word, _ in topic_words:
                     try:
-                        doc = await asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
-                        for sent in doc.sentences:
-                            for token in sent.tokens:
-                                if token.xpos.startswith("NN"):
-                                    concepts.append(token.text)
+                        doc = asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
+                        doc = await doc
+                        for token in doc:
+                            if token.pos_ == "NOUN":
+                                concepts.append(token.text)
                     except Exception as e:
                         self.logger.error(f"Error during stanza processing: {e}")
                         continue
@@ -191,11 +198,11 @@ class TopicModeler:
                 topic_words = topic_model.get_topic(topic)
                 for word, _ in topic_words:
                     try:
-                        doc = await asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
-                        for sent in doc.sentences:
-                            for token in sent.tokens:
-                                if token.xpos.startswith("NN"):
-                                    concepts.append(token.text)
+                        doc = asyncio.get_running_loop().run_in_executor(None, self.nlp, word)
+                        doc = await doc
+                        for token in doc:
+                            if token.pos_ == "NOUN":
+                                concepts.append(token.text)
                     except Exception as e:
                         self.logger.error(f"Error during stanza processing: {e}")
                         continue

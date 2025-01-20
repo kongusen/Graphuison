@@ -42,6 +42,11 @@ class AppSettings(BaseSettings):
     # 提示模板配置
     TEMPLATES: dict = json.loads(os.getenv("TEMPLATES", '{"relation_extraction": "Extract triples in the format: \n\nSUBJECT (SUBJECT_TYPE), RELATION, OBJECT (OBJECT_TYPE) \n if they exist in current context. otherwise please provide no.", "graph_fusion": "Fuse the candidate triples with the prior knowledge graph and output the merged triples in the format: \n\nSUBJECT (SUBJECT_TYPE), RELATION, OBJECT (OBJECT_TYPE)\n if they exist in current context. otherwise please provide no."}'))
 
+    # Neo4j配置
+    NEO4J_URI: str = os.getenv("NEO4J_URI", "bolt://localhost:7687")
+    NEO4J_USERNAME: str = os.getenv("NEO4J_USERNAME", "neo4j")
+    NEO4J_PASSWORD: str = os.getenv("NEO4J_PASSWORD", "password")
+    
 
 settings = AppSettings()
 

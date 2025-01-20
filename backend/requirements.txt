@@ -13,3 +13,4 @@ requests
 pydantic-settings
 httpx[socks]
 jieba
+neo4j

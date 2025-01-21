@@ -14,3 +14,5 @@ pydantic-settings==2.7.1
 httpx[socks]==0.28.1
 python-multipart==0.0.20
 bertopic==0.16.4
+jieba
+neo4j

@@ -1,81 +1,84 @@
-# Graphusion: 基于 RAG 的科学知识图谱构建框架
+# Graphusion: A RAG-based Framework for Scientific Knowledge Graph Construction
 
-## 简介
+## Introduction
 
-Graphusion 是一个基于检索增强生成（RAG）的框架，用于从自由文本中构建科学知识图谱。与传统的知识图谱构建方法不同，Graphusion 采用全局视角，通过融合局部知识来生成更全面、更准确的知识图谱。该框架主要用于自然语言处理（NLP）领域，但在教育场景下也展现出潜力。
+Graphusion is a framework based on Retrieval Augmented Generation (RAG) for constructing scientific knowledge graphs from free text. Unlike traditional methods for knowledge graph construction, Graphusion adopts a global perspective by fusing local knowledge to generate a more comprehensive and accurate knowledge graph. While primarily designed for the Natural Language Processing (NLP) domain, this framework also demonstrates potential in educational settings.
 
-## 核心特点
+## Core Features
 
-*   **零样本知识图谱构建**：无需预定义的实体列表，从自由文本中自动提取关键实体和关系。
-*   **全局知识融合**：融合局部知识图谱，解决传统方法中信息孤岛问题，实现更全面的知识表示。
-*   **灵活的关系类型**：支持多种关系类型（例如，`Prerequisite_of`、`Used_for`、`Compare` 等），并能处理关系冲突。
-*   **可应用于教育场景**：通过 `TutorQA` 基准数据集进行验证，展示在教育问答场景下的应用潜力。
-*   **利用 LLM 进行知识融合**: 不仅用于关系抽取，还用于知识融合过程，这在以往的方法中很少见。
-*   **实体种子引导**：通过主题建模生成种子实体列表，提高实体提取的准确性。
-*   **规则后处理**: 对分词结果进行规则后处理，进一步优化结果。
+*   **Zero-Shot Knowledge Graph Construction**: Automatically extracts key entities and relationships from free text without requiring predefined entity lists.
+*   **Global Knowledge Fusion**: Fuses local knowledge graphs to resolve information silos and achieve a more comprehensive knowledge representation.
+*   **Flexible Relationship Types**: Supports various relationship types (e.g., `Prerequisite_of`, `Used_for`, `Compare`) and can handle relationship conflicts.
+*   **Applicability in Educational Settings**: Validated with the `TutorQA` benchmark dataset, showcasing its potential in educational question-answering scenarios.
+*   **Utilizes LLM for Knowledge Fusion**: Leverages LLMs not only for relation extraction but also during knowledge fusion, which is rare in previous methods.
+*   **Entity Seed Guidance**: Employs topic modeling to generate seed entity lists, improving the accuracy of entity extraction.
+*   **Rule-based Post-processing**: Applies rule-based post-processing to the tokenization results, further optimizing the results.
 
-## 项目结构
+## Project Structure
 
-*   `graph_fusioner.py`: 负责融合局部知识图谱，解决关系冲突，发现新关系。
-*   `relation_extractor.py`: 使用 LLM 从文本中提取实体和关系。
-*   `text_processor.py`: 文本预处理器，负责分词、词形还原和专有名词处理。
-*  `llm_chain.py`:  负责 LLM 的调用和结果返回。
-*   `topic_modeler.py`: 使用 LDA 主题模型来发现文本的主题和概念。
-*   `embedder.py`: 使用 sentence transformers 来生成句子嵌入。
+*   `graph_fusioner.py`: Responsible for fusing local knowledge graphs, resolving relationship conflicts, and discovering new relationships.
+*   `relation_extractor.py`: Uses LLMs to extract entities and relationships from text.
+*   `text_processor.py`: Text preprocessor responsible for tokenization, lemmatization, and handling special terms.
+*   `llm_chain.py`: Manages LLM calls and result retrieval.
+*   `topic_modeler.py`: Employs LDA topic modeling to discover themes and concepts in the text.
+*   `embedder.py`: Utilizes sentence transformers to generate sentence embeddings.
 
-## 论文贡献
+## Paper Contributions
 
-*   提出了 Graphusion 框架，用于从自由文本中构建全局视角的科学知识图谱。
-*   设计了三阶段的知识图谱构建流程：种子实体提取、候选三元组提取、知识图谱融合。
-*   提出了 `TutorQA` 基准数据集，用于验证知识图谱在教育问答场景中的应用。
-*   实验结果表明，Graphusion 在实体提取和关系识别方面均取得了较好的效果。
+*   Introduced the Graphusion framework for constructing scientific knowledge graphs from a global perspective.
+*   Designed a three-stage knowledge graph construction pipeline: seed entity generation, candidate triple extraction, and knowledge graph fusion.
+*   Introduced the `TutorQA` benchmark dataset to validate the application of knowledge graphs in educational question-answering scenarios.
+*   Experimental results show that Graphusion achieves good performance in both entity extraction and relation identification.
 
-## 主要步骤
+## Main Steps
 
-1.  **种子实体提取 (Seed Entity Generation)**：使用主题建模 (BERTopic) 从文本中提取代表性实体。
-2.  **候选三元组提取 (Candidate Triple Extraction)**：利用 LLM 和 Chain-of-Thought (CoT) 提示，提取包含种子实体的三元组。
-3.  **知识图谱融合 (Knowledge Graph Fusion)**：融合局部知识图谱，解决关系冲突，推断新的三元组。
-    *   **实体合并 (Entity Merging)**：合并语义相似的实体。
-    *   **冲突解决 (Conflict Resolution)**：选择最准确的关系。
-    *   **新三元组推理 (Novel Triple Inference)**：从背景文本中推断新关系。
+1.  **Seed Entity Generation**: Uses topic modeling (BERTopic) to extract representative entities from the text.
+2.  **Candidate Triple Extraction**: Utilizes LLMs and Chain-of-Thought (CoT) prompting to extract triples containing seed entities.
+3.  **Knowledge Graph Fusion**: Fuses local knowledge graphs to resolve relationship conflicts and infer new triples.
+    *   **Entity Merging**: Merges semantically similar entities.
+    *   **Conflict Resolution**: Selects the most accurate relationship.
+    *   **Novel Triple Inference**: Infers new relationships from the background text.
 
-## 如何使用
+## How to Use
 
-1. **设置环境**：确保已安装 Python 3.8 或更高版本，并使用 `requirements.txt` 文件安装所有项目依赖库以确保兼容。
-2. **调整参数**：基于项目需求配置相应的 `config.yaml` 文件，其中包括 `relation_defs`（关系定义）、`templates`（LLM 提示模板）以及其他所需参数。
-3. **执行程序**：参考 `examples/` 目录中的示例，进行完整的知识图谱生成和问答处理测试。
+1.  **Environment Setup**: Ensure you have Python 3.8 or higher installed, and install all project dependencies using the `requirements.txt` file to ensure compatibility.
+2.  **Parameter Adjustment**: Configure the `config.yaml` file based on your project needs, including `relation_defs` (relationship definitions), `templates` (LLM prompt templates), and other required parameters.
+3.  **Execution**: Refer to the examples in the `examples/` directory for complete knowledge graph generation and question-answering processing tests.
 
-## TutorQA 基准数据集
+## TutorQA Benchmark Dataset
 
-*   包含 1200 个 QA 对，覆盖 6 个难度级别不同的任务：
-    *   关系判断 (Relation Judgment)
-    *   先决条件预测 (Prerequisite Prediction)
-    *   路径搜索 (Path Searching)
-    *   子图补全 (Subgraph Completion)
-    *   聚类 (Clustering)
-    *   创意生成 (Idea Hamster)
-*   强调了知识图谱在教育场景下的应用。
-*   提供专家验证的问答对，保证了数据质量。
+*   Includes 1200 QA pairs covering 6 different difficulty levels:
+    *   Relation Judgment
+    *   Prerequisite Prediction
+    *   Path Searching
+    *   Subgraph Completion
+    *   Clustering
+    *   Idea Hamster
+*   Highlights the application of knowledge graphs in educational settings.
+*   Provides expert-validated question-answer pairs to ensure data quality.
 
-## 实验结果
+## Experimental Results
 
-*   Graphusion 在实体提取和关系识别任务中取得了较高的专家评分（分别达到 2.92 和 2.37，满分 3 分）。
-*   在 `TutorQA` 基准测试中，通过使用 Graphusion 构建的知识图谱进行问答，与纯 LLM 基线相比，在多个任务中都取得了显著的性能提升。
+*   Graphusion achieved high expert scores in both entity extraction and relation identification tasks (2.92 and 2.37 respectively, out of a maximum score of 3).
+*   In the `TutorQA` benchmark, using knowledge graphs constructed by Graphusion for question-answering resulted in significant performance improvements compared to the pure LLM baseline in multiple tasks.
 
-## 伦理声明
+## Ethical Statement
 
-*   鼓励人工验证自动化知识提取的准确性。
-*   使用可靠的数据源，但仍需关注 LLM 和知识图谱可能存在的偏差。
-*   所有实验遵循 AI 伦理标准，不使用任何个人或敏感数据。
+*   Encourages manual verification of the accuracy of automatgit remote -ved knowledge extraction.
+*   Uses reliable data sources but still requires attention to potential biases in LLMs and knowledge graphs.
+*   All experiments adhere to AI ethical standards and do not use any personal or sensitive data.
 
-## 引用
+## License
 
-如果您在研究中使用本项目或论文，请引用以下论文：
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## Citation
+
+If you use this project or paper in your research, please cite the following paper:
 [Graphusion](https://arxiv.org/abs/2407.10794)
 
+## Contact Information
 
-## 联系方式
-
-如有任何问题，请通过以下方式联系我们：
+For any questions, please contact us through:
 
 [448486810@qq.com]

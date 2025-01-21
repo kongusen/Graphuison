@@ -1,43 +1,44 @@
 # text_processor.py
-import stanza
-from stanza.pipeline.core import Pipeline
+import spacy
 from typing import List, Tuple
 from backend.app.config import settings
-import os
 import asyncio
 
 class TextProcessor:
-    def __init__(self, language=None, processors="tokenize,lemma,pos,ner,depparse"):
+    def __init__(self, language=None, processors=None):
         self.language = language if language else settings.DEFAULT_LANGUAGE
-        self.nlp = Pipeline(self.language, processors=processors, use_gpu=False, verbose=False, use_async=True)
+        if self.language == "zh":
+          self.nlp = spacy.load("zh_core_web_sm")
+        else:
+            self.nlp = spacy.load("en_core_web_sm")
+
 
     async def preprocess_text(self, text: str) -> Tuple[List[str], List[List[str]]]:
         sentences = []
         tokens_list = []
+        doc = asyncio.get_running_loop().run_in_executor(None,self.nlp,text)
+        doc = await doc
 
-        # 使用 Stanza 进行句子分割和分词
-        doc = await asyncio.get_running_loop().run_in_executor(None, self.nlp, text)
-        for sent in doc.sentences:
-            sent_tokens_list = [token.text if self.language == 'zh' else token.lemma for token in sent.tokens]
-            tokens_list.append(sent_tokens_list)
-            sentences.append(sent.text)
+        for sent in doc.sents:
+           sent_tokens_list = [token.text if self.language == 'zh' else token.lemma_ for token in sent]
+           tokens_list.append(sent_tokens_list)
+           sentences.append(sent.text)
+
 
         return sentences, tokens_list
 
     def extract_information(self, text: str) -> dict:
         """
-        使用 Stanza 提取文本中的命名实体和依存关系
+        使用 spaCy 提取文本中的命名实体和依存关系
         """
-        doc = asyncio.get_running_loop().run_in_executor(None,self.nlp,text)
+        doc = self.nlp(text)
         entities = []
         relations = []
-        for sent in doc.sentences:
-            for ent in sent.ents:
-                entities.append((ent.text, ent.type))
-            for word in sent.words:
-                if word.head > 0:
-                    head_word = sent.words[word.head - 1]
-                    relations.append((word.text, word.deprel, head_word.text))
+        for ent in doc.ents:
+            entities.append((ent.text, ent.label_))
+        for token in doc:
+             if token.dep_ != "ROOT":
+                relations.append((token.text, token.dep_, token.head.text))
         return {
             "entities": entities,
             "relations": relations

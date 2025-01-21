@@ -17,7 +17,7 @@ dist/
 build/
 *.egg-info/
 
-.DS_STORE
+*/.DS_STORE
 
 .env
 /cache/

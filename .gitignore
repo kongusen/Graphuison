@@ -17,7 +17,8 @@ dist/
 build/
 *.egg-info/
 
-.DS_STORE
+*/.DS_STORE
+.DS_Store
 
 .env
 /cache/
@@ -35,3 +36,6 @@ build/
 /train/fasttext/model/
 /.idea/
 .idea/*
+
+# 忽略.specstory相关文件
+.specstory/

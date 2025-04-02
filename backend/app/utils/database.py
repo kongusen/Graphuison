@@ -64,12 +64,68 @@ class Neo4jClient:
             try:
                  query = """
                         MATCH (source:Entity)-[r:Relationship]->(target:Entity)
-                        RETURN source.name as source, type(r) as relation, target.name as target
+                        RETURN source.name as source, type(r) as relation, target.name as target, 
+                               source.type as source_type, target.type as target_type
                     """
                  result = session.run(query)
-                 graph_data = [{"source": record["source"], "relation": record["relation"], "target": record["target"]} for record in result]
+                 graph_data = [
+                     {
+                         "source": record["source"], 
+                         "relation": record["relation"], 
+                         "target": record["target"],
+                         "source_type": record["source_type"],
+                         "target_type": record["target_type"]
+                     } 
+                     for record in result
+                 ]
                  return graph_data
             except Exception as e:
                 logger.error(f"Failed to fetch graph data: {e}")
+                return []
+
+    def clear_database(self):
+        with self.driver.session() as session:
+            try:
+                # 删除所有节点和关系
+                query = """
+                    MATCH (n)
+                    DETACH DELETE n
+                """
+                session.run(query)
+                logger.info("Database cleared successfully.")
+                return True
+            except Exception as e:
+                logger.error(f"Failed to clear database: {e}")
+                return False
+
+    def get_entity_by_name(self, name: str):
+        with self.driver.session() as session:
+            try:
+                query = """
+                    MATCH (n:Entity {name: $name})
+                    RETURN n
+                """
+                result = session.run(query, name=name)
+                record = result.single()
+                if record:
+                    return record.get("n")
                 return None
+            except Exception as e:
+                logger.error(f"Failed to get entity by name: {e}")
+                return None
+
+    def find_related_entities(self, entity_name: str, max_depth: int = 2):
+        with self.driver.session() as session:
+            try:
+                query = """
+                    MATCH path = (start:Entity {name: $entity_name})-[*1..%d]-(related)
+                    RETURN related.name as name, related.type as type
+                """ % max_depth
+                result = session.run(query, entity_name=entity_name)
+                entities = [{"name": record["name"], "type": record["type"]} for record in result]
+                return entities
+            except Exception as e:
+                logger.error(f"Failed to find related entities: {e}")
+                return []
+
 neo4j_client = Neo4jClient()

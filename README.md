@@ -1,84 +1,141 @@
-# Graphusion: A RAG-based Framework for Scientific Knowledge Graph Construction
+# Graphuison: 基于多粒度知识融合的智能知识图谱平台
 
-## Introduction
+## 简介
 
-Graphusion is a framework based on Retrieval Augmented Generation (RAG) for constructing scientific knowledge graphs from free text. Unlike traditional methods for knowledge graph construction, Graphusion adopts a global perspective by fusing local knowledge to generate a more comprehensive and accurate knowledge graph. While primarily designed for the Natural Language Processing (NLP) domain, this framework also demonstrates potential in educational settings.
+Graphuison是一个基于多粒度知识融合的智能知识图谱构建平台，能够从自由文本中自动构建结构化知识图谱。本平台采用全局融合的视角，通过融合局部知识生成更全面、准确的知识图谱，特别适用于科学领域知识的表示和应用。
 
-## Core Features
+## 核心特性
 
-*   **Zero-Shot Knowledge Graph Construction**: Automatically extracts key entities and relationships from free text without requiring predefined entity lists.
-*   **Global Knowledge Fusion**: Fuses local knowledge graphs to resolve information silos and achieve a more comprehensive knowledge representation.
-*   **Flexible Relationship Types**: Supports various relationship types (e.g., `Prerequisite_of`, `Used_for`, `Compare`) and can handle relationship conflicts.
-*   **Applicability in Educational Settings**: Validated with the `TutorQA` benchmark dataset, showcasing its potential in educational question-answering scenarios.
-*   **Utilizes LLM for Knowledge Fusion**: Leverages LLMs not only for relation extraction but also during knowledge fusion, which is rare in previous methods.
-*   **Entity Seed Guidance**: Employs topic modeling to generate seed entity lists, improving the accuracy of entity extraction.
-*   **Rule-based Post-processing**: Applies rule-based post-processing to the tokenization results, further optimizing the results.
+- **零样本知识图谱构建**：无需预定义实体列表，自动从自由文本中提取关键实体和关系
+- **多粒度知识表示**：支持细粒度(fine)、中粒度(medium)和粗粒度(coarse)的概念提取和关系建模
+- **全局知识融合**：融合局部知识图谱，解决信息孤岛问题，构建更加全面的知识表示
+- **灵活的关系类型**：支持多种关系类型（如`isA`, `partOf`, `locatedIn`等）并能处理关系冲突
+- **大模型增强知识融合**：利用大型语言模型进行关系提取和知识融合，提高知识图谱质量
+- **实体种子引导**：采用主题建模生成种子实体列表，提高实体提取的准确性
+- **基于规则的后处理**：应用规则优化分词结果，进一步完善最终结果
 
-## Project Structure
+## 系统架构
 
-*   `graph_fusioner.py`: Responsible for fusing local knowledge graphs, resolving relationship conflicts, and discovering new relationships.
-*   `relation_extractor.py`: Uses LLMs to extract entities and relationships from text.
-*   `text_processor.py`: Text preprocessor responsible for tokenization, lemmatization, and handling special terms.
-*   `llm_chain.py`: Manages LLM calls and result retrieval.
-*   `topic_modeler.py`: Employs LDA topic modeling to discover themes and concepts in the text.
-*   `embedder.py`: Utilizes sentence transformers to generate sentence embeddings.
+Graphuison平台采用前后端分离的架构设计，包含以下主要组件：
 
-## Paper Contributions
+1. **前端**：基于React框架开发的用户界面，提供直观的图谱可视化和交互体验
+2. **后端API**：使用FastAPI构建的RESTful API服务，处理文档上传、知识抽取和图谱查询等请求
+3. **知识图谱引擎**：
+   - 文本处理器：负责文本预处理、分词和特殊术语处理
+   - 主题建模器：使用BERTopic进行主题建模，发现文本中的主题和概念
+   - 关系提取器：使用大型语言模型提取实体间的关系
+   - 图谱融合器：融合局部图谱，处理关系冲突并推断新的关系
+4. **存储层**：
+   - Neo4j图数据库：存储和查询知识图谱数据
+   - 文件存储：管理用户上传的文档
+   - 用户数据：存储用户信息和权限数据
 
-*   Introduced the Graphusion framework for constructing scientific knowledge graphs from a global perspective.
-*   Designed a three-stage knowledge graph construction pipeline: seed entity generation, candidate triple extraction, and knowledge graph fusion.
-*   Introduced the `TutorQA` benchmark dataset to validate the application of knowledge graphs in educational question-answering scenarios.
-*   Experimental results show that Graphusion achieves good performance in both entity extraction and relation identification.
+## 知识图谱构建流程
 
-## Main Steps
+Graphuison平台的知识图谱构建过程包括以下三个主要阶段：
 
-1.  **Seed Entity Generation**: Uses topic modeling (BERTopic) to extract representative entities from the text.
-2.  **Candidate Triple Extraction**: Utilizes LLMs and Chain-of-Thought (CoT) prompting to extract triples containing seed entities.
-3.  **Knowledge Graph Fusion**: Fuses local knowledge graphs to resolve relationship conflicts and infer new triples.
-    *   **Entity Merging**: Merges semantically similar entities.
-    *   **Conflict Resolution**: Selects the most accurate relationship.
-    *   **Novel Triple Inference**: Infers new relationships from the background text.
+1. **种子实体生成**：使用主题建模（BERTopic）从文本中提取代表性实体
+2. **候选三元组提取**：利用大型语言模型和思维链（CoT）提示技术提取包含种子实体的三元组
+3. **知识图谱融合**：
+   - 实体合并：合并语义相似的实体
+   - 冲突解决：选择最准确的关系表示
+   - 新关系推断：从背景文本中推断新的关系
 
-## How to Use
+## 快速开始
 
-1.  **Environment Setup**: Ensure you have Python 3.8 or higher installed, and install all project dependencies using the `requirements.txt` file to ensure compatibility.
-2.  **Parameter Adjustment**: Configure the `config.yaml` file based on your project needs, including `relation_defs` (relationship definitions), `templates` (LLM prompt templates), and other required parameters.
-3.  **Execution**: Refer to the examples in the `examples/` directory for complete knowledge graph generation and question-answering processing tests.
+### 环境要求
 
-## TutorQA Benchmark Dataset
+- Docker 与 Docker Compose
+- 至少8GB内存（推荐16GB以上）
+- 支持CUDA的GPU（可选，用于加速处理）
 
-*   Includes 1200 QA pairs covering 6 different difficulty levels:
-    *   Relation Judgment
-    *   Prerequisite Prediction
-    *   Path Searching
-    *   Subgraph Completion
-    *   Clustering
-    *   Idea Hamster
-*   Highlights the application of knowledge graphs in educational settings.
-*   Provides expert-validated question-answer pairs to ensure data quality.
+### 安装步骤
 
-## Experimental Results
+1. 克隆仓库：
+```bash
+git clone https://github.com/yourusername/Graphuison.git
+cd Graphuison
+```
 
-*   Graphusion achieved high expert scores in both entity extraction and relation identification tasks (2.92 and 2.37 respectively, out of a maximum score of 3).
-*   In the `TutorQA` benchmark, using knowledge graphs constructed by Graphusion for question-answering resulted in significant performance improvements compared to the pure LLM baseline in multiple tasks.
+2. 配置环境变量：
+```bash
+cp .env.example .env
+```
+编辑`.env`文件，配置必要的参数，包括OpenAI API密钥等
 
-## Ethical Statement
+3. 启动服务：
+```bash
+docker-compose up -d
+```
 
-*   Encourages manual verification of the accuracy of automatgit remote -ved knowledge extraction.
-*   Uses reliable data sources but still requires attention to potential biases in LLMs and knowledge graphs.
-*   All experiments adhere to AI ethical standards and do not use any personal or sensitive data.
+4. 访问平台：
+   - 前端界面：http://localhost:3000
+   - API文档：http://localhost:8000/docs
+   - Neo4j浏览器：http://localhost:7474 (默认用户名/密码: neo4j/password)
 
-## License
+### 使用指南
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+1. **用户注册与登录**：
+   - 通过`/auth/register`接口注册新用户
+   - 通过`/auth/token`接口获取访问令牌
 
-## Citation
+2. **文档上传与图谱生成**：
+   - 登录后，通过`/kg/upload`接口上传文档并指定图谱名称
+   - 使用`/kg/status/{task_id}`查看处理进度
+   - 处理完成后，可以通过`/kg/graphs`查看所有生成的图谱
 
-If you use this project or paper in your research, please cite the following paper:
-[Graphusion](https://arxiv.org/abs/2407.10794)
+3. **知识图谱查询**：
+   - 使用`/kg/search`搜索图谱中的实体
+   - 通过`/kg/entity/{entity_name}`查询实体关系
+   - 使用`/kg/granularity/{level}`查询特定粒度级别的图谱
 
-## Contact Information
+4. **智能问答**：
+   - 通过`/chat/`接口提交问题，获取基于知识图谱的回答
 
-For any questions, please contact us through:
+5. **数据导出**：
+   - 使用`/kg/graphs/{graph_id}/export`导出图谱数据
 
+详细API文档请参见[API文档](./docs/API文档.md)。
+
+## 配置选项
+
+主要配置选项在`.env`文件中设置，包括：
+
+- 服务端口和访问地址
+- OpenAI API密钥和模型选择
+- Neo4j数据库连接参数
+- 文档和图谱存储路径
+- 用户认证相关配置
+
+## 常见问题
+
+**Q: 处理大型文档时系统响应缓慢怎么办？**
+A: 增加后端服务的内存配额，或考虑启用GPU加速。
+
+**Q: 如何优化知识图谱的质量？**
+A: 调整配置文件中的参数，如增加`TRANSFORMATIONS_CHUNK_SIZE`以获取更多上下文，或提高`NUM_TOPICS`获取更丰富的主题。
+
+**Q: 如何添加自定义关系类型？**
+A: 在`.env`文件中的`RELATION_DEFINITIONS`参数中添加自定义关系定义。
+
+## 技术栈
+
+- **后端**：Python, FastAPI, asyncio, Neo4j
+- **大模型集成**：OpenAI API, LlamaIndex, SentenceTransformers
+- **自然语言处理**：BERTopic, Stanza, jieba (中文分词)
+- **前端**：React, TypeScript, D3.js (可视化)
+- **部署**：Docker, Docker Compose
+
+## 许可证
+
+本项目采用MIT许可证 - 详见[LICENSE](LICENSE)文件
+
+## 引用
+
+如果您在研究中使用了本项目或论文，请引用以下论文：
+[Graphuison](https://arxiv.org/abs/2407.10794)
+
+## 联系方式
+
+如有任何问题，请通过以下方式联系我们：
 [448486810@qq.com]

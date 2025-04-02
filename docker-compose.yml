@@ -7,14 +7,20 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - ./backend/.env
+      - ./.env
     volumes:
-       - ./backend/data:/app/data
+      - ./backend/data:/app/data
+      - ./logs:/app/logs
     networks:
       - app_net
+    depends_on:
+      - neo4j
+    restart: unless-stopped
+
   frontend:
     build:
       context: ./frontend
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     networks:
@@ -22,8 +28,32 @@ services:
     depends_on:
       - backend
     env_file:
-      - ./frontend/.env.local
+      - ./.env
+    restart: unless-stopped
+
+  neo4j:
+    image: neo4j:5.15.0
+    environment:
+      - NEO4J_AUTH=${NEO4J_USERNAME:-neo4j}/${NEO4J_PASSWORD:-password}
+      - NEO4J_dbms_memory_pagecache_size=1G
+      - NEO4J_dbms_memory_heap_initial__size=1G
+      - NEO4J_dbms_memory_heap_max__size=2G
+    ports:
+      - "7474:7474"  # HTTP
+      - "7687:7687"  # Bolt
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_conf:/conf
+    networks:
+      - app_net
+    restart: unless-stopped
 
 networks:
   app_net:
     driver: bridge
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  neo4j_conf:

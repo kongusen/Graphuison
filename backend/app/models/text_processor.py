@@ -8,7 +8,7 @@ class TextProcessor:
     def __init__(self, language=None, processors=None):
         self.language = language if language else settings.DEFAULT_LANGUAGE
         if self.language == "zh":
-          self.nlp = spacy.load("zh_core_web_sm")
+            self.nlp = spacy.load("zh_core_web_sm")
         else:
             self.nlp = spacy.load("en_core_web_sm")
 

@@ -9,11 +9,18 @@ from transformers import AutoTokenizer
 from dotenv import load_dotenv
 import os
 import json
+from pathlib import Path
 
 load_dotenv()
 
 
 class AppSettings(BaseSettings):
+    # 基础路径配置
+    BASE_DIR: Path = Path(__file__).resolve().parent.parent.parent
+    
+    # 密钥配置
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "graphuison_secret_key_please_change_in_production")
+    
     # 日志配置
     LOG_FILE: str = os.getenv("LOG_FILE", "app.log")
 
@@ -46,6 +53,15 @@ class AppSettings(BaseSettings):
     NEO4J_URI: str = os.getenv("NEO4J_URI", "bolt://localhost:7687")
     NEO4J_USERNAME: str = os.getenv("NEO4J_USERNAME", "neo4j")
     NEO4J_PASSWORD: str = os.getenv("NEO4J_PASSWORD", "password")
+    
+    # 存储配置
+    DOCUMENT_STORAGE_PATH: str = os.getenv("DOCUMENT_STORAGE_PATH", str(BASE_DIR / "data" / "documents"))
+    GRAPH_STORAGE_PATH: str = os.getenv("GRAPH_STORAGE_PATH", str(BASE_DIR / "data" / "graphs"))
+    USER_STORAGE_PATH: str = os.getenv("USER_STORAGE_PATH", str(BASE_DIR / "data" / "users"))
+    
+    # 用户认证配置
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 60 * 24))  # 默认24小时
+    TOKEN_ALGORITHM: str = os.getenv("TOKEN_ALGORITHM", "HS256")
     
 
 settings = AppSettings()

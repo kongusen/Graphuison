@@ -7,6 +7,11 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
+# 设置代理环境变量
+ENV HTTPS_PROXY=http://host.docker.internal:7897
+ENV HTTP_PROXY=http://host.docker.internal:7897
+ENV ALL_PROXY=socks5://host.docker.internal:7897
+
 # 复制依赖文件
 COPY requirements.txt .
 

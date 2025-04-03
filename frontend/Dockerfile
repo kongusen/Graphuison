@@ -1,23 +1,18 @@
-# frontend/Dockerfile
-FROM node:20-alpine AS builder
+FROM node:20-slim
 
 WORKDIR /app
 
+# 复制依赖文件
 COPY package*.json ./
+
+# 安装依赖
 RUN npm install
 
+# 复制应用代码
 COPY . .
-RUN npm run build
 
-FROM node:20-alpine AS runner
-
-WORKDIR /app
-
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
-
+# 暴露端口
 EXPOSE 3000
 
-CMD ["npm", "start"]
+# 启动命令
+CMD ["npm", "run", "dev"] 

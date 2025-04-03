@@ -2,17 +2,19 @@ from fastapi import APIRouter, HTTPException, UploadFile, File, BackgroundTasks,
 from typing import List, Dict, Optional
 from pydantic import BaseModel
 import logging
-from backend.app.models.text_processor import TextProcessor
-from backend.app.models.topic_modeler import TopicModeler
-from backend.app.models.embedder import SentenceEmbedder
-from backend.app.models.relation_extractor import RelationExtractor
-from backend.app.models.graph_fusioner import GraphFusioner
-from backend.app.models.llm_chain import LLMChain
-from backend.app.config import settings
-from backend.app.utils.database import neo4j_client
-from backend.app.utils.document_storage import document_storage
-from backend.app.utils.graph_storage import graph_storage
-from backend.app.utils.auth import get_current_user, get_required_user
+from app.models.text_processor import TextProcessor
+from app.models.topic_modeler import TopicModeler
+from app.models.embedder import SentenceEmbedder
+from app.models.relation_extractor import RelationExtractor
+from app.models.graph_fusioner import GraphFusioner
+from app.models.llm_chain import LLMChain
+from app.config import settings
+from app.utils.database import neo4j_client
+from app.utils.auth import get_current_user, get_required_user
+from app.utils.redis import redis_client
+from app.utils.background_tasks import background_tasks
+from app.utils.document_storage import document_storage
+from app.utils.graph_storage import graph_storage
 import asyncio
 from datetime import datetime
 

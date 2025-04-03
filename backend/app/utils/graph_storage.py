@@ -5,8 +5,8 @@ from datetime import datetime
 from typing import Dict, List, Optional
 import json
 import logging
-from backend.app.config import settings
-from backend.app.utils.database import neo4j_client
+from app.config import settings
+from app.utils.database import neo4j_client
 
 logger = logging.getLogger(__name__)
 

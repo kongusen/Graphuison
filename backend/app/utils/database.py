@@ -1,6 +1,6 @@
 # backend/app/utils/database.py
 from neo4j import GraphDatabase
-from backend.app.config import settings
+from app.config import settings
 import logging
 
 logger = logging.getLogger(__name__)

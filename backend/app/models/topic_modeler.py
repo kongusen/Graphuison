@@ -1,8 +1,8 @@
 # backend/app/models/topic_modeler.py
 from gensim import corpora, models
-from backend.app.models.embedder import SentenceEmbedder
+from app.models.embedder import SentenceEmbedder
 from typing import List, Dict, Optional
-from backend.app.models.text_processor import TextProcessor
+from app.models.text_processor import TextProcessor
 import spacy
 from bertopic import BERTopic
 import asyncio
@@ -18,7 +18,7 @@ import jieba
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import umap
-from backend.app.config import settings
+from app.config import settings
 import os
 
 

@@ -8,7 +8,7 @@ import logging
 import hashlib
 import jwt
 from passlib.context import CryptContext
-from backend.app.config import settings
+from app.config import settings
 
 logger = logging.getLogger(__name__)
 

@@ -3,8 +3,8 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
 from pydantic import BaseModel, EmailStr, Field
 from typing import Dict, Optional
-from backend.app.models.user import user_manager
-from backend.app.utils.auth import get_current_user, get_required_user
+from app.models.user import user_manager
+from app.utils.auth import get_current_user, get_required_user
 from datetime import timedelta
 import logging
 

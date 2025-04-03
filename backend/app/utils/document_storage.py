@@ -7,7 +7,7 @@ from datetime import datetime
 from typing import Dict, List, Optional, BinaryIO
 import json
 import logging
-from backend.app.config import settings
+from app.config import settings
 
 logger = logging.getLogger(__name__)
 

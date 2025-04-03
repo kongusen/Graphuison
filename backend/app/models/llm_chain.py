@@ -2,9 +2,9 @@
 import os
 import asyncio
 from llama_index.core import Settings, VectorStoreIndex, StorageContext, load_index_from_storage, SimpleDirectoryReader
-from backend.app.utils.exceptions import LLMException
+from app.utils.exceptions import LLMException
 from typing import Optional
-from backend.app.config import LlamaSettings
+from app.config import LlamaSettings
 import logging
 
 logger = logging.getLogger(__name__)

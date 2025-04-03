@@ -2,11 +2,11 @@
 import networkx as nx
 import re
 from typing import List, Tuple, Dict, Optional
-from backend.app.models.llm_chain import LLMChain
-from backend.app.utils.exceptions import LLMException
+from app.models.llm_chain import LLMChain
+from app.utils.exceptions import LLMException
 from llama_index.core import Settings
 import logging
-from backend.app.utils.database import neo4j_client
+from app.utils.database import neo4j_client
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from collections import defaultdict

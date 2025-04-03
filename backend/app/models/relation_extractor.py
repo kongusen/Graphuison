@@ -2,8 +2,8 @@ import re
 import stanza
 from typing import List, Tuple, Dict, Optional
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-from backend.app.models.llm_chain import LLMChain
-from backend.app.utils.exceptions import LLMException
+from app.models.llm_chain import LLMChain
+from app.utils.exceptions import LLMException
 from llama_index.core import Settings
 import numpy as np
 from sentence_transformers import SentenceTransformer

@@ -1,15 +1,25 @@
 from fastapi import FastAPI
-from backend.app.routers import knowledge_graph, chat, auth
-from backend.app.config import settings
+from app.routers import knowledge_graph, chat, auth
+from app.config import settings
 from fastapi.middleware.cors import CORSMiddleware
-from backend.app.utils.database import neo4j_client
+from app.utils.database import neo4j_client
+from app.utils.redis import init_redis
+from app.utils.background_tasks import init_background_tasks
 from fastapi.openapi.docs import get_swagger_ui_html
 from typing import List, Dict
 import logging
 import os
 
 # 配置日志
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(settings.LOG_FILE),
+        logging.StreamHandler()
+    ]
+)
+
 logger = logging.getLogger(__name__)
 
 # 确保数据目录存在
@@ -39,6 +49,30 @@ app.add_middleware(
 app.include_router(knowledge_graph.router, prefix="/kg", tags=["知识图谱管理"])
 app.include_router(chat.router, prefix="/chat", tags=["智能问答"])
 app.include_router(auth.router, prefix="/auth", tags=["用户认证"])
+
+@app.on_event("startup")
+async def startup_event():
+    """应用启动时初始化"""
+    try:
+        # 初始化 Redis
+        init_redis()
+        # 初始化后台任务
+        init_background_tasks()
+        logger.info("应用启动成功")
+    except Exception as e:
+        logger.error(f"应用启动失败: {e}")
+        raise
+
+@app.on_event("shutdown")
+async def shutdown_event():
+    """应用关闭时清理"""
+    try:
+        # 关闭后台任务
+        from app.utils.background_tasks import background_tasks
+        background_tasks.stop()
+        logger.info("应用关闭成功")
+    except Exception as e:
+        logger.error(f"应用关闭失败: {e}")
 
 @app.get("/", tags=["系统信息"])
 def read_root():

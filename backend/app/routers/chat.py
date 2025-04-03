@@ -1,9 +1,9 @@
 # backend/app/routers/chat.py
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
-from backend.app.utils.database import neo4j_client
+from app.utils.database import neo4j_client
 from typing import List, Dict, Optional
-from backend.app.models.llm_chain import LLMChain
+from app.models.llm_chain import LLMChain
 import logging
 from datetime import datetime
 

@@ -2,7 +2,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from typing import Optional, Dict
 
-from backend.app.models.user import user_manager
+from app.models.user import user_manager
 
 # OAuth2密码流认证
 oauth2_scheme = OAuth2PasswordBearer(

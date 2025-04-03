@@ -1,7 +1,7 @@
 # text_processor.py
 import spacy
 from typing import List, Tuple
-from backend.app.config import settings
+from app.config import settings
 import asyncio
 
 class TextProcessor:
